@@ -136,7 +136,8 @@ const productTable = [
 
 function Dashboard() {
   useEffect(() => {
-    // Data retrieved https://en.wikipedia.org/wiki/List_of_cities_by_average_temperature
+    const container = document.getElementById("container");
+    if (!container) return;
     Highcharts.chart("container", {
       chart: {
         type: "line",
@@ -197,7 +198,6 @@ function Dashboard() {
   useEffect(() => {
     Highcharts.chart("pie", {
       chart: {
-        plotBackgroundColor: null,
         plotBorderWidth: 0,
         plotShadow: false,
       },
