@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import Highcharts from "highcharts";
 import Footer from "../footer";
+import HighchartsAccessibility from "highcharts/modules/accessibility";
+
+HighchartsAccessibility(Highcharts);
+
 
 const traffic = [
   {
@@ -136,12 +140,11 @@ const productTable = [
 
 function Dashboard() {
   useEffect(() => {
-    const container = document.getElementById("container");
-    if (!container) return;
-    Highcharts.chart("container", {
-      chart: {
-        type: "line",
-      },
+   
+
+    Highcharts.chart("lineChart", {
+      
+      
       title: {
         text: "Yearly Average Sales & Expence ",
       },
@@ -172,7 +175,7 @@ function Dashboard() {
       plotOptions: {
         line: {
           dataLabels: {
-            enabled: true,
+            enabled: false,
           },
           enableMouseTracking: false,
         },
@@ -195,12 +198,11 @@ function Dashboard() {
       ],
     });
   }, []);
+
+  
   useEffect(() => {
-    Highcharts.chart("pie", {
-      chart: {
-        plotBorderWidth: 0,
-        plotShadow: false,
-      },
+    Highcharts.chart("pieChart", {
+      
       title: {
         text: "Best<br>selling<br>of  <br>month",
         align: "center",
@@ -435,7 +437,8 @@ function Dashboard() {
         </section>
         <section className="w-full flex gap-2">
           <div className=" h-auto rounded-md w-[76%]">
-            <div id="container" className="border rounded-md"></div>
+            {/* #TODO: check this */}
+            <div id="lineChart" className="border rounded-md"></div>
           </div>
           <div className="  border rounded-md bg-indigo-100 w-1/4">
             <div className="flex flex-col   mt-5 px-10 gap-3">
@@ -500,7 +503,7 @@ function Dashboard() {
             </div>
           </div>
           <div className="w-1/2 rounded-md border border-blue-500  h-auto">
-            <div id="pie"></div>
+            <div id="pieChart"></div>
           </div>
         </section>
         <section>
