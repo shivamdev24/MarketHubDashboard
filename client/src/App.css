@@ -1,0 +1,23 @@
+.main{
+  background: #e2e2e2;
+  display: flex;
+}
+
+
+
+.left{
+  display: none;
+}
+.right{
+  background: white;
+}
+
+ .nav{
+  display: flex;
+  width: 1440px;
+  background: #202020;
+}
+
+.profile{
+  display: flex;
+}
