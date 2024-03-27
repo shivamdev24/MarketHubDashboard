@@ -42,96 +42,222 @@ const traffic = [
   },
 ];
 
-const productTable = [
+const productList = [
   {
     sr: 1,
-    product: "Samsung A17 Lite",
-    trending: 9,
-    sale: 178,
-    stock: "200",
-    color: "bg-indigo-500",
-    text: "text-white",
+    ProductName: "laptop",
+    StockAvailable: "2314",
+    SoldProduct: "1278",
+    TotalSale: "330,627",
+    ActualPrice: "258",
   },
   {
     sr: 2,
-    product: "Samsung A17 Lite",
-    trending: 10,
-    sale: 178,
-    stock: "200",
-    color: "bg-white",
-    text: "text-blue-800",
+    ProductName: "laptop",
+    StockAvailable: "2534",
+    SoldProduct: "1547",
+    TotalSale: "400,719",
+    ActualPrice: "259",
   },
   {
     sr: 3,
-    product: "Samsung A17 Lite",
-    trending: 7,
-    sale: 178,
-    stock: "200",
-    color: "bg-indigo-500",
-    text: "text-white",
+    ProductName: "mobile",
+    StockAvailable: "2768",
+    SoldProduct: "1863",
+    TotalSale: "482,262",
+    ActualPrice: "259",
   },
   {
     sr: 4,
-    product: "Samsung A17 Lite",
-    trending: 6,
-    sale: 178,
-    stock: "200",
-    color: "bg-gray-200",
-    text: "text-blue-800",
+    ProductName: "electronic gadget",
+    StockAvailable: "2912",
+    SoldProduct: "2191",
+    TotalSale: "567,469",
+    ActualPrice: "259",
   },
   {
     sr: 5,
-    product: "Samsung A17 Lite",
-    trending: 4,
-    sale: 178,
-    stock: "200",
-    color: "bg-indigo-500",
-    text: "text-white",
+    ProductName: "laptop",
+    StockAvailable: "3121",
+    SoldProduct: "2456",
+    TotalSale: "634,864",
+    ActualPrice: "258",
   },
   {
     sr: 6,
-    product: "Samsung A17 Lite",
-    trending: 8,
-    sale: 178,
-    stock: "200",
-    color: "bg-gray-200",
-    text: "text-blue-800",
+    ProductName: "monitor",
+    StockAvailable: "3357",
+    SoldProduct: "2743",
+    TotalSale: "710,207",
+    ActualPrice: "259",
   },
   {
     sr: 7,
-    product: "Samsung A17 Lite",
-    trending: 3,
-    sale: 178,
-    stock: "200",
-    color: "bg-indigo-500",
-    text: "text-white",
+    ProductName: "monitor",
+    StockAvailable: "3582",
+    SoldProduct: "3038",
+    TotalSale: "784,812",
+    ActualPrice: "259",
   },
   {
     sr: 8,
-    product: "Samsung A17 Lite",
-    trending: 1,
-    sale: 178,
-    stock: "200",
-    color: "bg-green-600",
-    text: "text-white",
+    ProductName: "laptop",
+    StockAvailable: "3214",
+    SoldProduct: "1378",
+    TotalSale: "330,727",
+    ActualPrice: "258",
   },
   {
     sr: 9,
-    product: "Samsung A17 Lite",
-    trending: 5,
-    sale: 178,
-    stock: "200",
-    color: "bg-indigo-500",
-    text: "text-white",
+    ProductName: "mobile",
+    StockAvailable: "2500",
+    SoldProduct: "1156",
+    TotalSale: "300,656",
+    ActualPrice: "260",
   },
   {
     sr: 10,
-    product: "Samsung A17 Lite",
-    trending: 10,
-    sale: 178,
-    stock: "200",
-    color: "bg-gray-200",
-    text: "text-blue-800",
+    ProductName: "electronic gadget",
+    StockAvailable: "2763",
+    SoldProduct: "1892",
+    TotalSale: "380,727",
+    ActualPrice: "201",
+  },
+  {
+    sr: 11,
+    ProductName: "monitor",
+    StockAvailable: "2892",
+    SoldProduct: "2431",
+    TotalSale: "470,607",
+    ActualPrice: "197",
+  },
+  {
+    sr: 12,
+    ProductName: "laptop",
+    StockAvailable: "3001",
+    SoldProduct: "2138",
+    TotalSale: "450,827",
+    ActualPrice: "211",
+  },
+  {
+    sr: 13,
+    ProductName: "monitor",
+    StockAvailable: "3145",
+    SoldProduct: "2767",
+    TotalSale: "520,719",
+    ActualPrice: "189",
+  },
+  {
+    sr: 14,
+    ProductName: "mobile",
+    StockAvailable: "3421",
+    SoldProduct: "2956",
+    TotalSale: "590,205",
+    ActualPrice: "199",
+  },
+  {
+    sr: 15,
+    ProductName: "electronic gadget",
+    StockAvailable: "3671",
+    SoldProduct: "3301",
+    TotalSale: "620,507",
+    ActualPrice: "187",
+  },
+  {
+    sr: 16,
+    ProductName: "laptop",
+    StockAvailable: "3889",
+    SoldProduct: "3512",
+    TotalSale: "705,912",
+    ActualPrice: "201",
+  },
+  {
+    sr: 17,
+    ProductName: "mobile",
+    StockAvailable: "4132",
+    SoldProduct: "3897",
+    TotalSale: "800,916",
+    ActualPrice: "206",
+  },
+  {
+    sr: 18,
+    ProductName: "mobile",
+    StockAvailable: "4312",
+    SoldProduct: "4232",
+    TotalSale: "870,627",
+    ActualPrice: "205",
+  },
+  {
+    sr: 19,
+    ProductName: "monitor",
+    StockAvailable: "4512",
+    SoldProduct: "4567",
+    TotalSale: "920,737",
+    ActualPrice: "201",
+  },
+  {
+    sr: 20,
+    ProductName: "monitor",
+    StockAvailable: "4712",
+    SoldProduct: "4921",
+    TotalSale: "960,827",
+    ActualPrice: "196",
+  },
+  {
+    sr: 21,
+    ProductName: "electronic gadget",
+    StockAvailable: "4923",
+    SoldProduct: "5124",
+    TotalSale: "1,005,347",
+    ActualPrice: "196",
+  },
+  {
+    sr: 22,
+    ProductName: "monitor",
+    StockAvailable: "5111",
+    SoldProduct: "5323",
+    TotalSale: "1,055,816",
+    ActualPrice: "198",
+  },
+  {
+    sr: 23,
+    ProductName: "laptop",
+    StockAvailable: "5322",
+    SoldProduct: "5546",
+    TotalSale: "1,100,716",
+    ActualPrice: "198",
+  },
+  {
+    sr: 24,
+    ProductName: "electronic gadget",
+    StockAvailable: "5523",
+    SoldProduct: "5782",
+    TotalSale: "1,150,607",
+    ActualPrice: "199",
+  },
+  {
+    sr: 25,
+    ProductName: "mobile",
+    StockAvailable: "5712",
+    SoldProduct: "6054",
+    TotalSale: "1,200,916",
+    ActualPrice: "198",
+  },
+  {
+    sr: 26,
+    ProductName: "mobile",
+    StockAvailable: "5892",
+    SoldProduct: "6356",
+    TotalSale: "1,250,727",
+    ActualPrice: "197",
+  },
+  {
+    sr: 27,
+    ProductName: "electronic gadget",
+    StockAvailable: "6012",
+    SoldProduct: "6677",
+    TotalSale: "1,300,819",
+    ActualPrice: "195",
   },
 ];
 
@@ -141,7 +267,6 @@ function Dashboard() {
   
   useEffect(() => {
     Highcharts.chart("pieChart", {
-      
       title: {
         text: "Best<br>selling<br>of  <br>month",
         align: "center",
@@ -181,12 +306,11 @@ function Dashboard() {
           name: "Product",
           innerSize: "50%",
           data: [
-            ["Mobile", 73.86],
-            ["Clothes", 11.97],
-            ["Grocery", 5.52],
-            ["Laptops", 2.98],
-            ["Jewellery", 1.9],
-            ["Other", 3.77],
+            ["Mobile", 8488840],
+            ["Monitor", 3165443],
+            ["Electronic Gadgets", 2376962],
+            ["Laptops", 11087779],
+            ["Other", 4587779],
           ],
         },
       ],
@@ -378,7 +502,7 @@ function Dashboard() {
           <div className=" h-auto rounded-md w-[76%]">
             {/* #TODO: check this */}
             <div id="lineChart" className="border rounded-md">
-              <LineChart/>
+              <LineChart />
             </div>
           </div>
           <div className="  border rounded-md bg-indigo-100 w-1/4">
@@ -405,38 +529,34 @@ function Dashboard() {
               Product List
             </h1>
             <div className=" h-96 overflow-auto p-2">
-              <table className="border w-full rounded">
-                <tr className="text-indigo-500">
-                  <th className="border border-gray-900 p-2 px-4">Sr</th>
-                  <th className="border border-gray-900 p-2 px-4">
-                    Product Name
-                  </th>
-                  <th className="border border-gray-900 p-2 px-4">Sale</th>
-                  <th className="border border-gray-900 p-2 px-4">Trending</th>
-                  <th className="border border-gray-900 p-2 px-4">Stock</th>
+              <table className="w-full">
+                <tr>
+                  <th className="border">sr</th>
+                  <th className="border">Product Name</th>
+                  <th className="border">Stock Available</th>
+                  <th className="border">Sold Product</th>
+                  <th className="border">Total Sale</th>
+                  <th className="border">Actual Price</th>
                 </tr>
-                {productTable.map((props) => (
-                  // <tr key={props.sr} className={`${props.color} ${props.text}`}>
+                {productList.map((props) => (
                   <tr key={props.sr}>
-                    <td className="border border-gray-900 p-2 px-4 text-center">
-                      {" "}
-                      {props.sr}{" "}
+                    <td className="text-center p-1 border text-blue-700">
+                      {props.sr}
                     </td>
-                    <td className="border border-gray-900 p-2 px-4 text-center">
-                      {" "}
-                      {props.product}{" "}
+                    <td className="text-center p-1 border text-blue-700">
+                      {props.ProductName}
                     </td>
-                    <td className="border border-gray-900 p-2 px-4 text-center">
-                      {" "}
-                      {props.sale}{" "}
+                    <td className="text-center p-1 border text-blue-700">
+                      {props.StockAvailable}
                     </td>
-                    <td className="border border-gray-900 p-2 px-4 text-center">
-                      {" "}
-                      {props.trending}{" "}
+                    <td className="text-center p-1 border text-indigo-500">
+                      {props.SoldProduct}
                     </td>
-                    <td className="border border-gray-900 p-2 px-4 text-center">
-                      {" "}
-                      {props.stock}{" "}
+                    <td className="text-center p-1 border text-gray-800 font-semibold">
+                      Rs. {props.TotalSale}
+                    </td>
+                    <td className="text-center p-1 border text-gray-900">
+                      Rs. {props.ActualPrice}
                     </td>
                   </tr>
                 ))}

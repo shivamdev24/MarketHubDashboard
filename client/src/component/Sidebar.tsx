@@ -108,8 +108,8 @@ const navigation = [
     ),
   },
   {
-    name: "Emails",
-    to: "/email",
+    name: "Contact",
+    to: "/contact",
     current: false,
     svg: (
       <svg
@@ -154,7 +154,7 @@ export default function Sidebar() {
                 item.current
                   ? "bg-indigo-100 text-[#6366F1]"
                   : "text-indigo-500 hover:bg-indigo-100 hover:border hover:text-indigo-700",
-                "rounded px-3  py-2 text-md font-medium flex gap-2 border border-white"
+                "rounded px-3  py-2 text-md duration-500 font-medium flex gap-2 border border-white"
               )}
               aria-current={item.current ? "page" : undefined}
             >
@@ -167,7 +167,7 @@ export default function Sidebar() {
       <div className="mt-64 ">
         <Link
           to="/settings"
-          className="rounded px-3  py-2 text-md font-medium flex gap-2 border border-white hover:bg-gray-400 items-center justify-center"
+          className="rounded px-3  py-2 text-md font-medium flex gap-2 border border-white hover:bg-indigo-100 duration-500 items-center justify-center"
         >
           <span>
             <svg
@@ -177,7 +177,7 @@ export default function Sidebar() {
               height="24"
               viewBox="0 0 24 24"
               stroke-width="1.5"
-              stroke="#000000"
+              stroke="#6366F1"
               fill="none"
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -187,7 +187,7 @@ export default function Sidebar() {
               <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
             </svg>
           </span>
-          <span>Setting</span>
+          <span className="text-[#6366F1]">Setting</span>
         </Link>
       </div>
     </div>

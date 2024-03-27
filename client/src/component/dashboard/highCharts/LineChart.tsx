@@ -1,9 +1,11 @@
-
 import Highcharts from "highcharts";
 import HighchartsReact from "highcharts-react-official";
 
 function LineChart() {
   const options = {
+    chart: {
+      type: "line",
+    },
     title: {
       text: "Yearly Average Sales & Expense",
     },
@@ -43,15 +45,35 @@ function LineChart() {
       {
         name: "Sales",
         data: [
-          10000, 12000, 12344, 16434, 17000, 18450, 16000, 15000, 18598, 19563,
-          23764, 25798,
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
         ],
       },
       {
         name: "Expense",
         data: [
-          20000, 20593, 19987, 17344, 16834, 14343, 13242, 11043, 10000, 12034,
-          11282, 11882,
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
+          Math.floor(Math.random() * 500000),
         ],
       },
     ],
