@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Dashboard from "./component/dashboard/Dashboard"
 import Product from "./component/dashboard/Product";
-import Contact from "./component/dashboard/Contact";
+import Contact from "./component/dashboard/Feedback";
 import Sale from "./component/dashboard/Sale";
 import Feedback from "./component/dashboard/Feedback";
 

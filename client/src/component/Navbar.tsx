@@ -26,10 +26,12 @@ export default function Example() {
       current: location.pathname === item.to,
     }));
   return (
-    <Disclosure as="nav" className=" pt-5 px-5 ">
+    <Disclosure as="nav" className=" pt-5 sm:px-5 ">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 border border-indigo-500 rounded-lg ">
+          <div className="mx-auto 
+          
+          max-w-7xl px-2 sm:px-6 lg:px-8 border border-indigo-500 rounded-lg ">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}

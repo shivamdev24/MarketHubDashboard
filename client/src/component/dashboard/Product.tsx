@@ -265,7 +265,7 @@ function Product() {
         </section>
         <section>
           <table className="w-full">
-            <tr>
+            <tr className="bg-indigo-100">
               <th className="border">sr</th>
               <th className="border">Product Name</th>
               <th className="border">Stock Available</th>
@@ -287,7 +287,7 @@ function Product() {
                 <td className="text-center p-1 border text-indigo-500">
                   {props.SoldProduct}
                 </td>
-                <td className="text-center p-1 border text-gray-800 font-semibold">
+                <td className="text-center p-1 border text-green-500 font-semibold">
                   {props.TotalSale}
                 </td>
                 <td className="text-center p-1 border text-gray-900">
