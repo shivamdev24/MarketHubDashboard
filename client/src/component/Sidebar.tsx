@@ -1,10 +1,9 @@
-
 import { Link } from "react-router-dom";
-import Brand from "../assets/Markethub.png"
+import { useState } from "react";
+import Brand from "../assets/Markethub.png";
 
 const navigation = [
-  {
-    name: "Dashboard",
+   { name: "Dashboard",
     to: "/",
     current: true,
     svg: (
@@ -80,33 +79,6 @@ const navigation = [
       </svg>
     ),
   },
-  // {
-  //   name: "Feedback",
-  //   to: "/feedback",
-  //   current: false,
-  //   svg: (
-  //     <svg
-  //       xmlns="http://www.w3.org/2000/svg"
-  //       className="icon icon-tabler icon-tabler-address-book"
-  //       width="24"
-  //       height="24"
-  //       viewBox="0 0 24 24"
-  //       stroke-width="1.5"
-  //       stroke="#6366F1"
-  //       fill="none"
-  //       stroke-linecap="round"
-  //       stroke-linejoin="round"
-  //     >
-  //       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-  //       <path d="M20 6v12a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2z" />
-  //       <path d="M10 16h6" />
-  //       <path d="M13 11m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-  //       <path d="M4 8h3" />
-  //       <path d="M4 12h3" />
-  //       <path d="M4 16h3" />
-  //     </svg>
-  //   ),
-  // },
   {
     name: "Feedback",
     to: "/feedback",
@@ -133,28 +105,37 @@ const navigation = [
   },
 ];
 
+
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function Sidebar() {
+  const [clickedLink, setClickedLink] = useState("");
+
+  const handleLinkClick = (name: string) => {
+    setClickedLink(name);
+  };
+
   return (
     <div className="w-56 p-4 border-r h-screen sticky top-0 border-indigo-500 hidden md:block">
       <div className="flex items-center gap-2 border-indigo-500 border-b pb-4 mt-4">
         <img src={Brand} className="h-10 w-auto" alt="" />
         <span className="text-2xl font-bold text-indigo-500">MarketHub</span>
       </div>
-      <div className="mt-8  pt-2 ">
+      <div className="mt-8 pt-2">
         <div className="flex gap-2 flex-col ">
           {navigation.map((item) => (
             <Link
               key={item.name}
               to={item.to}
+              onClick={() => handleLinkClick(item.name)}
               className={classNames(
-                item.current
-                  ? "bg-indigo-100 text-[#6366F1]"
-                  : "text-indigo-500 hover:bg-indigo-100 hover:border hover:text-indigo-700",
-                "rounded px-3  py-2 text-md duration-500 font-medium flex gap-2 border border-white"
+                
+                   clickedLink === item.name
+                    ? "bg-indigo-200 text-indigo-700"
+                    : "text-indigo-500 hover:bg-indigo-100 hover:border hover:text-indigo-700",
+                "rounded px-3 py-2 text-md duration-500 font-medium flex gap-2 border border-white"
               )}
               aria-current={item.current ? "page" : undefined}
             >
@@ -164,10 +145,10 @@ export default function Sidebar() {
           ))}
         </div>
       </div>
-      <div className="mt-64 ">
+      <div className="mt-80 ">
         <Link
-          to="/settings"
-          className="rounded px-3  py-2 text-md font-medium flex gap-2 border border-white hover:bg-indigo-100 duration-500 items-center justify-center"
+          to="/"
+          className="rounded px-3 py-2 text-md font-medium flex gap-2 border border-white hover:bg-indigo-100 duration-500 items-center justify-center"
         >
           <span>
             <svg

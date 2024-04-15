@@ -50,37 +50,8 @@ export default function Example() {
                   <img className="h-8  w-auto" src={Brand} alt="Your Company" />
                 </Link>
                 <div className="hidden sm:block ">
-                  <button  className="flex items-center justify-between  w-38 px-2 rounded">
-                    <span className="text-indigo-500 p-2 ">Search..</span>
-                    <span className="text-indigo-500 p-1 border rounded border-indigo-300">
-                      Ctrl + K
-                    </span>
+                  
 
-                    {/* <input
-                      type="text"
-                      placeholder="Search..."
-                      className="p-2 outline-gray-200"
-                    />
-                    <button className="text-gray-400 ml-1  border border-gray-200 p-2 rounded">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="icon icon-tabler icon-tabler-search"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="#6366F1"
-                        fill="none"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                        <path d="M21 21l-6 -6" />
-                      </svg>
-                    </button> */}
-                    {/* <button className="text-gray-400 ml-1  border border-gray-200 p-2 rounded">Ctrl + K</button> */}
-                  </button>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -138,7 +109,7 @@ export default function Example() {
                               "block px-4 py-2 text-sm text-gray-700"
                             )}
                           >
-                            Settings
+                            Manage Account
                           </a>
                         )}
                       </Menu.Item>
